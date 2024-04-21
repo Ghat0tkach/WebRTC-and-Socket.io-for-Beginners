@@ -19,3 +19,49 @@ The Socket.IO library keeps an open TCP connection to the server, which may resu
 ``
 
 - [Official Documentation](https://socket.io/docs/v4/)
+
+Installation tips :
+
+
+
+# Simple Socket.IO projects
+
+
+## Requirements
+
+- Node.js installed on your machine. You can download it from [here](https://nodejs.org/).
+
+## Installation
+
+1. Clone this repository:
+
+```
+git clone https://github.com/ghat0tkache/WebRTC-and-Socket.io-for-Beginners.git
+```
+
+2. Navigate to the project directory:
+
+```
+cd socket.io
+```
+
+3. Install dependencies:
+
+```
+npm install
+```
+
+## Usage
+
+1. Start the server:
+
+```
+node codes/{desired project}/index.js
+```
+
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+```
+
