@@ -1,0 +1,24 @@
+<script src="https://cdn.socket.io/4.0.1/socket.io.min.js"></script>
+
+<script>
+  const socket = io("http://localhost:8000");
+  //   let ws = new WebSocket("ws://localhost:8000");
+  //   console.log(ws);
+  console.log(socket);
+
+  //   ws.onopen = function () {
+  //     console.log("connected");
+  //     ws.send("Hello Server!");
+  //   };
+
+  //   ws.onmessage = function (e) {
+  //     console.log(e.data);
+  //   };
+
+  socket.on("connect", (data) => {
+    socket.on("welcome", (message) => {
+      console.log(message);
+    });
+    socket.emit("message", { data: "Hello Server!" });
+  });
+</script>
